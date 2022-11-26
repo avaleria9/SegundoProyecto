@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #fff59d;
+    min-width: 400px;
+}
+
+.header{
+    background-color:rgb(255, 174, 201);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover,
+/**/.overlay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color:#ab4493; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+.header .nav-links a:hover{
+    color: #ffFF;
+    text-decoration: none;
+}
+
+/**/.menu {
+    display:none;
+}
+
+.header .btn button,
+/**/.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color:#FFFF; 
+    padding: 9px 25px;
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    border-color: #ab4493; 
+    border-style: solid; 
+      border-radius: 10px; 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.header .btn button:hover,
+/**/.header .menu button:hover{
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    color:#FFFF; 
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+
+
+
+
+/*Nav Mobile*/
+
+.header a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background:#ab4493;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #ffFF;
+   text-decoration: none;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+
+.nav_links a{
+    font-family: sans-serif;
+    color:#ab4493;
+    font-weight: bold; 
+    text-decoration: none;
+  justify-content: center;
+  }
+  
+  /*alinea la lista una al lado del otro*/
+  .nav_links li{
+      display: inline-block;
+      padding: 0px 70px;
+    
+  }
+  .nav_links{
+      list-style:none;
+      background-color:  rgb(255, 174, 201);
+     
+      
+  }
+  .nav_links a:hover{
+      color: rgb(252, 190, 233);
+      text-decoration: none;
+  }
+  
+  
+  body{position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg,#ffebbf ,#ffcdd2,#decdfb );
+  
+  }
+  
+  
+  .footer{
+      display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:  rgb(255, 174, 201);
+  }
+  .footer a{font-family: sans-serif;
+    color:#ab4493;
+    font-weight: bold; 
+    text-decoration: none;
+  justify-content: center;}
+  .footer a:hover{
+    color: rgb(252, 190, 233);
+    text-decoration: none;
+  }
+  .footer li{list-style:none ;}
+  .footerabajo{
+     margin-top: auto;
+  }
+  
+  
+  .quienessomos{
+      display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: sans-serif;
+  }
+  .texto{font-family: sans-serif;
+    float: center;  
+    color: #ab4493;
+    font-weight: bold;
+  font-style:oblique ; }
+  .persona{
+  width: auto; 
+      height: auto;
+      margin: 10px auto ;
+      border-radius: 10px;  
+      padding-top: 20px;
+      padding-bottom: 10px;  
+      background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+      padding-left: 30px; 
+      padding-right: 30px;
+      font-family: sans-serif;
+      float: center;  
+      color: #fff;
+      font-weight: bold; 
+  }
+  /*formulario de contact*/
+  
+  .contact_form{  
+      width: 460px; 
+      height: auto;
+      margin: 10px auto;
+      border-radius: 10px;  
+      padding-top: 30px;
+      padding-bottom: 20px;  
+      background-color: rgb(255, 174, 201);
+      padding-left: 30px; 
+      font-family: sans-serif;
+      
+     
+    
+    }
+    
+    
+    input{
+      background-color: #fbfbfb; 
+  
+      width: 408px; 
+      height: 40px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #ab4493; 
+      margin-top: 10px;  
+      padding-left: 10px;
+      margin-bottom: 20px; 
+   
+    }
+    
+    
+    textarea{
+      background-color: #fbfbfb; 
+      width: 405px; 
+      height: 150px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #ab4493; 
+      margin-top: 10px;  
+      padding-left: 10px;
+      margin-bottom: 20px; 
+      padding-top: 15px; 
+    }
+    
+    
+    label{
+      display: block; 
+      float: center;  
+      color: #ab4493;
+      font-weight: bold; 
+      
+    }
+    
+    
+    button{
+      
+      height: 45px; 
+      padding-left: 5px;
+      padding-right: 5px;   
+      margin-bottom: 20px; 
+      margin-top: 10px;   
+      text-transform: uppercase;
+      background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+      border-color: #ab4493; 
+    border-style: solid; 
+      border-radius: 10px;  
+      width: 408px;   
+      cursor: pointer;
+    }
+    
+    
+    button p{
+      color: #fff; 
+      font-weight: bold; 
+    }
+      
+      button:active{transform: translatey(5px);}
+    
+  /*SLIDER*/
+  
+  .slider{
+   
+    margin: auto;
+    width: 95%;
+    height: 65%;
+    overflow: hidden;
+   
+  
+  }
+  .slider ul{
+    display:flex;
+    padding:0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    }
+  .slider li {
+    width: 100%;
+    list-style: none;
+  }
+  .slider img{
+    width: 100%;
+  }
+  
+  @keyframes cambio {
+    0% {margin-left:0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300;}
+  }
+  nav.seleccion {
+    width: 100%;
+    position: absolute;
+    top:auto;
+    padding: 0;
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+  }
+  
+  nav.seleccion ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  nav.seleccion ul li {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  nav.seleccion a {
+   
+    text-decoration: none;
+   
+    font-family: sans-serif;
+    color: #fff; 
+    font-weight: bold; 
+    line-height: 1.8;
+    flex-grow: 1;
+    text-align: center;
+   
+    border-right: 1px solid rgb(255, 174, 201);
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  nav.seleccion li:last-child a {
+    border-right: 0;
+  }
+  
+  
+  
+  nav.seleccion a:active {
+   
+    transform: translatey(5px);
+  }
+   
+  @media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+@media screen and (max-width: 760px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    .quienessomos{  flex-direction: column}
+    .footer{
+      flex-direction: column;
+}
+
+    }
